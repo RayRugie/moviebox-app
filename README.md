@@ -8,5 +8,5 @@
 
 Clone the repo and run npm install
 
-then run the server with npm run dev
+then run the server with npm start
 
