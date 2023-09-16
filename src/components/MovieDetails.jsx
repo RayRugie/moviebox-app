@@ -79,7 +79,7 @@ console.log(id)
                  {movie ? new Date(movie.release_date).toUTCString() : ""}
  
                   </span>{" "}
-                  · <span data-testid="movie-runtime">{movie?.runtime}m</span>
+                  · <span data-testid="movie-runtime">{movie?.runtime}</span>m
                 </p>
               </div>
 
