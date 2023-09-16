@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
-import MovieGenre from "../Homepage/MovieGenre"
+import MovieGenre from "./MovieGenre"
 import BounceLoader from "react-spinners/BounceLoader";
 import './MovieDetails.css'
 import Footer from './Footer';

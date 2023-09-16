@@ -1,11 +1,11 @@
 
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
-import Homepage from './Homepage/Homepage';
+import Homepage from './components/Homepage';
 
-import MovieDetails from './Homepage/MovieDetails';
-import MovieLists from './Homepage/PopularMovies';
-import FeaturedMovie from './Homepage/FeaturedMovie';
+import MovieDetails from './components/MovieDetails';
+import MovieLists from './components/PopularMovies';
+import FeaturedMovie from './components/FeaturedMovie';
 
 function App() {
   return (

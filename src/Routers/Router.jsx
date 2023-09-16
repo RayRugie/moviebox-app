@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
-import Homepage from '../Homepage/Homepage';
-import MovieList from '../Homepage/FeaturedMovie';
-import MovieDetails from '../Homepage/MovieDetails';
+import Homepage from '../components/Homepage';
+import MovieList from '../components/FeaturedMovie';
+import MovieDetails from '../components/MovieDetails';
 
 const Router = () => {
   return (

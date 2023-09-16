@@ -4,7 +4,7 @@ import Logo from "../assets/Logo.svg";
 import Search from "../assets/Search.svg";
 
 import axios from 'axios';
-import "../Homepage/Homepage.css"
+import "../components/Homepage.css"
 
 import MovieLists from './PopularMovies';
 import Ratings from "../assets/Rating.svg";
