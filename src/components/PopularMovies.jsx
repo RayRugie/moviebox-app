@@ -47,9 +47,9 @@ const PopularMovie = () => {
       
       <div className="movies flex flex-row space-x-5 justify-center">
         {movies.map((movie) => (
-            <Link to={`/movies/${movie.id}`} key={movie.id} data-testid="movie-card">
+            <Link to={`/movies/${movie.id}`} key={movie.id} >
             <div 
-              className="movie m-2 border border-gray-400 hover:w-full">
+              className="movie m-2 border border-gray-400 hover:w-full" data-testid="movie-card">
             <img
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}

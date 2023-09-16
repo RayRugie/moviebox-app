@@ -41,16 +41,16 @@ const FeaturedMovie = () => {
 
   return (
     <div className="movie-list flex flex-wrap mt-10 space-y-12 text-black">
-      <div className='mt absolute flex flex-row space-x-32 -ml-96'>
+      <div className='mt absolute flex flex-row justify-between '>
         <h2 className='ft text-2xl font-bold font-bold text-start'>Featured Movie</h2>
       <p className='d text-base  justify-end text-right mt-1 '>See more</p>
       </div>
       
       <div className="movies flex flex-row space-x-5 justify-center text-center">
         {movies.map((movie) => (
-        <Link to={`/movies/${movie.id}`} key={movie.id} data-testid="movie-card">
+        <Link to={`/movies/${movie.id}`} key={movie.id}>
         <div 
-          className="movie m-2 border border-gray-400 hover:w-full text-black">
+          className="movie m-2 border border-gray-400 hover:w-full text-black"  data-testid="movie-card">
             <img
               src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
               alt={movie.title}
