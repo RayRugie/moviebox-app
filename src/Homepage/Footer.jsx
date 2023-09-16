@@ -19,7 +19,7 @@ const Footer = () => {
            <p>Privacy & Policy</p>
            <p>Press Room</p>
         </div>
-        <p className='text-black'>© 2021 MovieBox by Omorugie Oyibotha  </p>
+        <p className='text-black'>© 2023 MovieBox by Omorugie Oyibotha  </p>
     </div>
     
   )
