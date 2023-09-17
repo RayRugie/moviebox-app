@@ -67,21 +67,21 @@ const MovieDetails = ({ match }) => {
           <div className="title">
             <div className="font-roboto">
               <p>
-                <span className="movie-title">{movie?.title}</span> ·{" "}
-                <span className="movie-release_date">
+                <span className="movie-title" data-testid="movie-title">{movie?.title}</span> ·{" "}
+                <span className="movie-release_date" data-testid="movie-release_date">
                   {movie ? new Date(movie.release_date).toUTCString() : ""}
                 </span>{" "}
-                · <span className="movie-runtime">{movie?.runtime}</span>m
+                · <span className="movie-runtime" data-testid="movie-runtime">{movie?.runtime}</span>m
               </p>
             </div>
-            <p className="rating">
+            <p className="rating" data-testid="movie-rating">
               {movie.vote_average}/10 | {movie.popularity}
             </p>
           </div>
           {genres}
         </div>
-        <div className="desc mt-4" data-testid="movie-details">
-          <p className="movie-overview">
+        <div className="desc mt-4" >
+          <p className="movie-overview" data-testid="movie-details">
             {movie?.overview}
           </p>
         </div>
