@@ -11,7 +11,7 @@ const PopularMovie = () => {
     const fetchMovies = async () => {
       try {
         const response = await axios.get(
-          `https://api.themoviedb.org/3/movie/popular?api_key=3e6d14da7134bf8c0b4d697d98ec28bc&limit=4&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`
+          `https://api.themoviedb.org/3/movie/top_rated?api_key=3e6d14da7134bf8c0b4d697d98ec28bc&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=2`
         
         
           );
@@ -45,7 +45,7 @@ const PopularMovie = () => {
       <p className='d text-base  justify-end text-right mt-1'>See more</p>
       </span> */}
       
-      <div className="movies flex flex-row space-x-5 justify-center">
+      <div className="movies flex flex-row space-x-5 justify-centermovies flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center text-center md:bg-white">
         {movies.map((movie) => (
             <Link to={`/movies/${movie.id}`} key={movie.id} >
             <div 
