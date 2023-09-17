@@ -80,7 +80,7 @@ const MovieDetails = ({ match }) => {
           </div>
           {genres}
         </div>
-        <div className="desc mt-4">
+        <div className="desc mt-4" data-testid="movie-details">
           <p className="movie-overview">
             {movie?.overview}
           </p>
