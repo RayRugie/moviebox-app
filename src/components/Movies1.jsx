@@ -45,7 +45,7 @@ const MovieListsA = () => {
       <p className='d text-base  justify-end text-right mt-1'>See more</p>
       </span> */}
       
-      <div className="movies flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center text-center">
+      <div className="movies flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center text-center" data-testid=“movie-card”>
         {movies.map((movie) => (
           <Link to={`/movies/${movie.id}`} key={movie.id} >
           <div 
