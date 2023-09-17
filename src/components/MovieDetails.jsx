@@ -68,7 +68,7 @@ const MovieDetails = ({ match }) => {
             <div className="font-roboto">
               <p>
                 <span className="movie-title" data-testid="movie-title">{movie?.title}</span> ·{" "}
-                <span className="movie-release_date" data-testid="movie-release-date">
+                <span className="movie-release-date" data-testid="movie-release-date">
                   {movie ? new Date(movie.release_date).toUTCString() : ""}
                 </span>{" "}
                 · <span className="movie-runtime" data-testid="movie-runtime">{movie?.runtime}</span>m
